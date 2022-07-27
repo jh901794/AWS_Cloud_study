@@ -11,6 +11,7 @@ public class Array_4 {
             if(c_value[i]== '±è') {
                 System.out.println(c_value[i]);
             }
+
         }
 
     }
