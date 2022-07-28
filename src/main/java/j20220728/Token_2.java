@@ -9,8 +9,8 @@ public class Token_2 {
         while (token.hasMoreTokens()){
             //이렇게하면 next에 계속 걸려서 지금게 안나온다.
             //배열에 넣고 실행해야할듯.
-            if(token.nextElement().equals("김재훈")) System.out.println("이름 검색");
+            String tokenval = token.nextToken();
+            if(tokenval.equals("김재훈")) System.out.println("이름 검색  : " + tokenval);
         }
-
     }
 }
