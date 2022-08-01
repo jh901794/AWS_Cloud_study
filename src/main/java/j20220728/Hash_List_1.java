@@ -15,7 +15,7 @@ public class Hash_List_1 extends CommonHome {
         System.out.println(hash.getName());
         System.out.println(hash.getAddress());
         System.out.println(hash.getAge());
-*/
+
         Hash_List_1 hash = new Hash_List_1("±Ë¿Á»∆", "∫ŒªÍ", 25);
         ArrayList al = new ArrayList();
         al.add(hash);
@@ -31,9 +31,11 @@ public class Hash_List_1 extends CommonHome {
         System.out.println(hash_v.getAge());
     }
 
-    public Hash_List_1(String name, String address, int age) {
-        this.name = name;
-        this.address = address;
-        this.age = age;
+//    public Hash_List_1(String name, String address, int age) {
+//        this.name = name;
+//        this.address = address;
+//        this.age = age;
+//    }
+    */
     }
 }
