@@ -4,6 +4,7 @@ import Common.CommonHome;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.Iterator;
 
 public class HashHome extends CommonHome {
     static Hashtable table = new Hashtable();
@@ -19,6 +20,7 @@ public class HashHome extends CommonHome {
         }
         System.out.println("===========================");
         Enumeration em = table.keys();
+        Iterator it = em.asIterator();
         while (em.hasMoreElements()){
             String key_v = (String) em.nextElement();
             HashHome values = (HashHome) table.get(key_v);
