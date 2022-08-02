@@ -3,8 +3,16 @@ package Common;
 public class CommonHome {
     // public : 누구나 접근
     // private : 현 클래스만
-    private String name, address;
+    private String name, address,email;
     private int age;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public String getName() {
         return name;
@@ -30,10 +38,4 @@ public class CommonHome {
         this.age = age;
     }
 
-    public static void main(String[] args) {
-        CommonHome comm = new CommonHome();
-        System.out.println(comm.name = "김재훈");
-        System.out.println(comm.address = "부산");
-        System.out.println(comm.age = 24);
-    }
 }
