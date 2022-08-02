@@ -2,8 +2,9 @@ package j20220728;
 
 public class firstnameSearch_1 {
     public static void main(String[] args) {
-        String name[] = {"±èÀçÈÆ", "¾Æ¹«°³", "È«±æµ¿"};
-        char[] first = {'¿À', 'ÀÌ','±è'};
+        /*
+        String name[] = {"??????", "?????", "??øª"};
+        char[] first = {'??', '??','??'};
         char[][] names = new char[name.length][3];
 
         for(int i = 0; i < name.length; i++){
@@ -23,5 +24,7 @@ public class firstnameSearch_1 {
             name[i] = first[i] + name[i].substring(1);
             System.out.println(name[i]);
         }
+
+         */
     }
 }
