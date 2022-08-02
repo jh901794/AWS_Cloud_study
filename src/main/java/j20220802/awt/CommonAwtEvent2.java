@@ -45,15 +45,5 @@ public class CommonAwtEvent2 extends Frame implements WindowListener, ActionList
     @Override
     public void actionPerformed(ActionEvent e) {
         String even = e.getActionCommand();
-        if(even.equals("Sign In")) {
-            System.out.println("입력된 아이디 : " + NaverAwt_1.login.getText() + "\t입력된 비밀번호 : " + NaverAwt_1.passwd.getText());
-            if(NaverAwt_1.login.getText().equals(NaverAwt_1.s_id) && NaverAwt_1.passwd.getText().equals(NaverAwt_1.s_pw)) {
-                System.out.println("로그인 성공");
-            }else{
-                System.out.println("로그인 실패");
-            }
-        }
-
-
     }
 }
