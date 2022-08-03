@@ -24,7 +24,7 @@ public class Gwang_Home_2 extends CommonAwtEvent2 implements ActionListener {
     public Gwang_Home_2() {
         setSize(600, 600);
         setVisible(true);
-        setLayout(new GridLayout(8, 2));
+        setLayout(new GridLayout(7, 2));
 
         Label l_name = new Label("Name : ");
         name = new TextField(15);
