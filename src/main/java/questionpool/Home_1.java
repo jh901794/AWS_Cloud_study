@@ -33,7 +33,11 @@ public class Home_1 {
         while (e.hasMoreElements()){
             System.out.println(e.nextElement());
         }
+        System.out.println("========================");
+        System.out.println("이름 : " + p.getProperty("User_Name"));
+        System.out.println("나이 : " + p.getProperty("User_AGE") + "세");
+        System.out.println("주소 : " + p.getProperty("User_ADDRESS"));
+        System.out.println("번호 : " + p.getProperty("First_num") + "-" + p.getProperty("Second_Num"));
 
-        System.out.println(p.getProperty("User_Name"));
     }
 }
