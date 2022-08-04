@@ -150,5 +150,11 @@ public class InputLogin_1 extends CommonAwtEvent2 {
 
         addWindowListener(this);
     }
+    public void adding (Label label, TextField textField){
+        label = new Label(label + " : ");
+        textField = new TextField(15);
+        add(label);
+        add(textField);
+    }
 
 }

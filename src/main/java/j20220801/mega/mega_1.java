@@ -21,7 +21,7 @@ public class mega_1 extends CommonHome {
         hash.put(gw2.getName(),gw2);
         hash.put(gw3.getName(),gw3);
         hash.put(gw4.getName(),gw4);
-        hash.put(gw5.getName(),gw5);
+        //hash.put(gw5.getName(),gw5);
 
         Enumeration en = hash.keys();
         for(int i =0; i < arr.length; i++){

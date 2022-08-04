@@ -30,9 +30,11 @@ public class HashHome extends CommonHome {
     }
 
     public HashHome() {
+        super();
     }
 
     public HashHome(String name, String address, int age) {
+        super();
         this.setName(name);
         this.setAddress(address);
         this.setAge(age);

@@ -6,6 +6,10 @@ public class CommonHome {
     private String name, address,email;
     private int age;
 
+    public CommonHome() {
+
+    }
+
     public String getEmail() {
         return email;
     }
@@ -38,4 +42,9 @@ public class CommonHome {
         this.age = age;
     }
 
+    public CommonHome(String name, String address, int age) {
+        this.name = name;
+        this.address = address;
+        this.age = age;
+    }
 }
