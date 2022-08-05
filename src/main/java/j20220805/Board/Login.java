@@ -20,6 +20,7 @@ public class Login extends Command {
                 token = new StringTokenizer(reader.readLine());
                 if(token.nextToken().equals(PWD)){
                     System.out.println("로그인 성공");
+                    Board_List();
                 }else {
                     System.out.println("비밀번호가 틀렸습니다.");
                     First_Page();

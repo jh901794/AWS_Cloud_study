@@ -18,4 +18,7 @@ public abstract class Navigater implements Auth, Board{
     public void Board_List(){
         Board_List board_list = new Board_List();
     }
+    public void Notice() {
+        Notice notice = new Notice();
+    }
 }
