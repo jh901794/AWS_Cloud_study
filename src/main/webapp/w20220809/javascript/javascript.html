@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<!--  설정하는 곳 -->
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script>
+	// function 메소드 이름(인자들...){}
+		function WindowLoad(){
+			// window는 생략 가능.
+			window.alert("알림창입니다.");
+			alert("알림창2");
+		}
+		//var 은 OBject < 모든 데이터타입을 갖는다.
+
+		function Login(){
+			var ftm = document.jshome;
+			//alert(frm.userid.value);
+			//alert(frm.password.value);
+			var userid = jshome.userid.value;
+			var password = jshome.password.value;
+			if((userid == "jaehoon") && (password == "pwd")){
+				alert("로그인성공");
+			}else{
+				alert("로그인 실패")
+			}
+		}
+	
+	</script>
+</head>
+<!-- 
+	onload : 페이지가 호출되면 onload의 js를 호출.
+
+ -->
+<body onload="WindowLoad()">
+<form action="" name="jshome">안녕하세요 반갑습니다.
+	<input type="text" name="userid"/>
+	<input type="password" name="password" />
+	<input type="button" value="login"onclick="Login()" >
+</form>
+	
+</body>
+</html>

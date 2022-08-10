@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var user_id, pwd, name;
+
+        function first(){
+            document.getElementById("table_2").style.display = 'none';
+        }
+        function f() {
+            alert(document.getElementById("userid").value);
+        }
+        function Sign(){
+            if(document.getElementById("userpwd").value == document.getElementById("check").value){
+                user_id = document.getElementById("userid").value;
+                pwd = document.getElementById("userpwd").value;
+                name = document.getElementById("username").value;
+                alert("회원가입 성공");
+                document.getElementById("table").style.display = 'none';
+                document.getElementById("table_2").style.display = '';
+            }else{
+                alert("비밀번호가 다릅니다.");
+            }
+        }
+
+        function login(){
+            if((document.getElementById("user__id").value == user_id) && (document.getElementById("user__pwd").value == pwd)){
+                alert(name + "님 환영합니다.");
+            }else{
+                alert("로그인 실패");
+            }
+        }
+    </script>
+</head>
+<body onload="first()">
+    <table name = "table" id="table">
+        <tr>
+            <td colspan="4"><img src="/images/Naver.png" alt="" style="width: 99%"></td>
+        </tr>
+        <tr name="tr">
+            <td>아이디</td>
+            <td colspan="3" name="td"><input type="test" name="userid" id="userid" style="width: 99%"></td>
+        </tr>
+        <tr>
+            <td>비밀번호</td>
+            <td colspan="3"><input type="text" name="userpwd" id="userpwd" style="width: 99%"></td>
+        </tr>
+        <tr>
+            <td>비밀번호 확인</td>
+            <td colspan="3"><input type="text" name="checkpwd" id="check" style="width: 99%"></td>
+        </tr>
+        <tr>
+            <td>이름</td>
+            <td colspan="3"><input type="text" name="name" id="username"  style="width: 99%"></td>
+        </tr>
+        <tr>
+            <td>생년월일</td>
+            <td><input type="text" name="arr" ></td>
+            <td><input type="text" name="arr" ></td>
+            <td><input type="text" name="arr" ></td>
+        </tr>
+        <tr>
+            <td>이메일</td>
+            <td colspan="3"><input type="text" name="arr" style="width: 99%"></td>
+        </tr>
+        <tr>
+            <td td colspan="4">휴대전화</td>
+        </tr>
+        <tr>
+
+            <td td colspan="3"><input type="text" name="arr"  style="width: 99%"></td>
+            <td><button style="width: 98%">인증번호 받기</button></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text" name="code" style="width: 99%"></td>
+        </tr>
+        <td colspan="4"><input type="button" value="가입하기" onclick="Sign()"></td>
+        </tr>
+    </table>
+
+    <table border="1" name="table_2" id="table_2">
+        <tr>
+            <td colspan="2"><h2>NAVER Login</h2></td>
+        </tr>
+        <tr>
+            <td>ID : </td>
+            <td><input type="text" name="user__id" id="user__id"></td>
+        </tr>
+        <tr>
+            <td>PWD : </td>
+            <td><input type="text" name="user__pwd" id="user__pwd"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit" style="width: 100%" onclick="login();">로그인</button></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <script>
+/*        function javascript1() {
+            var id = document.getElementById("divid");
+            id.innerHTML = "<hr><br><h1>안녕하세요</h1>";
+            var divclass = document.getElementsByClassName("divclass");
+            divclass[0].innerHTML = "<h2>안녕하세요</h2>"
+        }
+
+        function javascriptLession_1() {
+            // var < Object모든 타입을 받을 수 있다.
+            var name = "김재훈";
+            var divid = document.getElementById("divid");
+            divid.innerText = name;
+        }
+
+        function javascriptLession() {
+            var intvalue = 10;
+            var result = intvalue + 10;
+
+            alert(result);
+        }
+
+        function javascriptLession_2() {
+            var divclass = document.getElementsByClassName("divclass");
+            var name = '김재훈';
+            if (name == '김재훈') {
+                divclass[0].innerText = "맞습니다.";
+            } else {
+                divclass[0].innerText = "틀립니다.";
+            }
+        }
+
+        function javascriptLession_3() {
+            var init = 10;
+            var result = 0;
+            var one = 0;
+            var two = 0;
+
+            for (var i = 1; i <= init; i++) {
+                //console.log(i);
+                if (i % 2 == 0) {
+                    two += i;
+                } else {
+                    one += i;
+                }
+            }
+            //console.log(result);
+            console.log(one);
+            console.log(two);
+        }
+
+        function javascriptLession_4() {
+            var init = 0;
+            var max = 10;
+            while (++init <= max) {
+                console.log(init);
+
+            }
+        }*/
+
+        function javascriptLession_console() {
+            var temp = f();
+            //console.log(result);
+            console.log("짝수 : " + temp[0]);
+            console.log("홀수 : " + temp[1]);
+        }
+        function javascriptLession_alert() {
+            var temp = f();
+            //console.log(result);
+            alert("짝수 : " + temp[0] + "  홀수 : " + temp[1]);
+         }
+        function javascriptLession_id() {
+            var temp = f();
+            //console.log(result);
+            var divid = document.getElementById("divid");
+            divid.innerHTML = "<h1>짝수 : " + temp[0]+"</h1><br><h2>홀수 : "+temp[1] + "</h2>" ;
+        }
+        function javascriptLession_class() {
+            var temp = f();
+            //console.log(result);
+            var divclass = document.getElementsByClassName("divclass");
+            divclass[0].innerHTML = "<h1>짝수 : " + temp[0]+"</h1><br><h2>홀수 : "+temp[1] + "</h2>" ;
+        }
+
+        function f() {
+            var init = 10;
+            var result ={};
+            var even =0;
+            var odd =0;
+            for (var i = 1; i <= init; i++) {
+                //console.log(i);
+                if (i % 3 != 0) {
+                    if (i % 2 == 0) {
+                        even += i;
+                    } else {
+                        odd += i;
+                    }
+                }
+            }
+            result[0] = even;
+            result[1] = odd;
+            return result;
+        }
+    </script>
+</head>
+<body onload="javascript1()">
+<form action="">
+    <div id="divid"></div>
+    <div class="divclass"></div>
+    <input type="button" value="id" onclick="javascriptLession_id()">
+    <input type="button" value="class" onclick="javascriptLession_class()">
+    <input type="button" value="console" onclick="javascriptLession_console()">
+    <input type="button" value="alert" onclick="javascriptLession_alert()">
+</form>
+<div></div>
+</body>
+</html>
