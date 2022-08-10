@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+      var frm = document.frm;
+      var list = ["아이디", "비밀번호","이메일"];
+      var _ids = ["id", "pwd", "email"];
+      function start() {
+          var content = "<table>";
+          var table = document.getElementById("tableset");
+          for (var i = 0; i < list.length; i++) {
+              content += "<tr><td>" + list[i] + " : </td><td colspan=\"2\"> <input type=\"text\" id=\"" + _ids[i] + "\"></td></tr>";
+          }
+          content = content + "</table>";
+          table.innerHTML = content;
+      }
+      function _Login() {
+          if((document.getElementById(_ids[0]).value == "jaehoon") && (document.getElementById(_ids[1]).value == "1234") && (document.getElementById(_ids[2]).value == "jaehoon@naver.com")){
+              frm.action = "Common_Main.html";
+              frm.method = "post";
+              frm.submit();
+          }else{
+              alert("잘못 입력했습니다.")
+          }
+      }
+      function _Sign(){
+          frm.action = "Common_Input.html";
+          frm.method = "post";
+          frm.submit();
+      }
+  </script>
+</head>
+<body onload="start()">
+<form name="frm">
+    <div id="tableset"></div>
+    <button type="submit" onclick="_Login()">로그인</button>
+    <button type="submit" onclick="_Sign()">회원가입</button>
+</form>
+</body>
+</html>

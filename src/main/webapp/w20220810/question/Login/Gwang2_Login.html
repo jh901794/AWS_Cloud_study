@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // id, pwd ture? main : redirect
+        function Login() {
+            var frm = document.Gwang1_form;
+            if((frm._id.value == "jaehoon") && (frm._pwd.value == "1234")){
+                frm.action="Gwang2_Main.html";
+                frm.method="post";
+                frm.submit();
+            }else{
+                alert("로그인 실패")
+            }
+        }
+
+        function InputLogin() {
+            var frm = document.Gwang1_form;
+            frm.action="Gwang2_input.html";
+            frm.method="post";
+            frm.submit();
+        }
+    </script>
+</head>
+<body>
+<form name = "Gwang1_form">
+    <table>
+        <tr>
+            <td>ID :</td>
+            <td><input type="text" name="_id" id="_id"></td>
+        </tr>
+        <tr>
+            <td>PASSWORD :</td>
+            <td><input type="text" name="_pwd" id="_pwd"></td>
+        </tr>
+        <tr><td colspan="2"> <div></div></td></tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit" style="width: 100%" value="로그인" onclick="Login()">로그인</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <button type="submit" style="width: 100%" value="회원가입" onclick="InputLogin()">회원가입</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

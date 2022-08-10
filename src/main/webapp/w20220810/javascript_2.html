@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    function Arraylsit() {
+      var arr = new Array(5);
+      for(var i =0; i < arr.length; i++){
+          arr[i] = i;
+          console.log(arr[i]);
+        }
+    }
+    function Arraylsit_2() {
+        var arr = [];
+        for(var i =0; i < 5; i++){
+            arr[i] = i;
+            console.log(arr[i]);
+        }
+    }
+
+    function Arraylsit_3() {
+        var arr = [1,2,3,4,5];
+        for(var i =0; i<arr.length; i++){
+            console.log(arr[i]);
+        }
+    }
+
+  </script>
+</head>
+<body onload="Arraylsit()">
+<input type="button" value="array2" onclick="Arraylsit_2()">
+<input type="button" value="array3" onclick="Arraylsit_3()">
+
+</body>
+</html>

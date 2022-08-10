@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // array = new Array(11);
+        // 배열에 짝수 홀수 3,6,9 빼고 0부터 10까지 값을 담고 출력하세요
+        function FirstArray() {
+            var arr = new Array(11);
+            for (var i = 0; i < arr.length; i++) {arr[i] = i;}
+            var temp = Do(arr);
+            document.getElementById("First_result").innerHTML = "-New- 짝수 : " + temp[0] + " 홀수 : " + temp[1];
+            console.log("-New- 짝수 : " + temp[0] + " 홀수 : " + temp[1]);
+        }
+
+        function SecondArray() {
+            var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            var temp = Do(arr);
+            document.getElementById("Second_result").innerHTML = "-초기화- 짝수 : " + temp[0] + " 홀수 : " + temp[1];
+            console.log("-초기화- 짝수 : " + temp[0] + " 홀수 : " + temp[1]);
+        }
+
+        function ThirdArray() {
+            var arr = [];
+            for (var i = 0; i < 11; i++) {arr[i] = i;}
+            var temp = Do(arr);
+            document.getElementById("Thrid_result").innerHTML = "-초기화 후 반복- 짝수 : " + temp[0] + " 홀수 : " + temp[1];
+            console.log("-초기화 후 반복- 짝수 : " + temp[0] + " 홀수 : " + temp[1]);
+
+        }
+
+        function Do(arr) {
+            var even = 0, odd = 0;
+            var result = new Array(2);
+            for (var i = 1; i < arr.length; i++) {
+                if (i % 3 != 0) {
+                    if (i % 2 == 0) {
+                        even += arr[i];
+                    } else {
+                        odd += arr[i];
+                    }
+                }
+            }
+            result = [even, odd];
+            return result;
+        }
+
+    </script>
+</head>
+<body>
+<div name="First_result" id="First_result"></div>
+<input type="button" value="First_result" onclick="FirstArray()">
+<br>
+<div name="Second_result" id="Second_result"></div>
+<input type="button" value="Second_result" onclick="SecondArray()">
+<br>
+<div name="Thrid_result" id="Thrid_result"></div>
+<input type="button" value="Thrid_result" onclick="ThirdArray()">
+</body>
+</html>

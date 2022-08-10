@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var list = ["아이디", "비밀번호", "비밀번호 확인", "이름", "생년월일", "성별", "이메일", "휴대전화"];
+        var _ids = ["id", "pwd", "check", "name", "birth", "sex", "email", "phone"];
+        function start() {
+            var content = "<table>";
+            var table = document.getElementById("tableset");
+            for (var i = 0; i < list.length; i++) {
+                content += "<tr><td>" + list[i] + " : </td><td colspan=\"2\"> <input type=\"text\" id=\"" + _ids[i] + "\"></td></tr>";
+            }
+            content = content + "</table>";
+            table.innerHTML = content;
+        }
+
+        function _form() {
+            var frm = document.frm;
+            var ha = 0;
+            var flag = false;
+            for (var i =0; i < _ids.length; i++) {
+                if (document.getElementById(_ids[i]).value !="") {
+                    if(document.getElementById(_ids[1]).value == document.getElementById(_ids[2]).value){
+                        flag =true;
+                    }else{
+                        alert("비밀번호가 다릅니다.");
+                        break;
+                    }
+                }else{
+                    flag = false;
+                    alert(list[i] + "가 비어있습니다.");
+                    break;
+                }
+            }
+            if(flag){
+                frm.action = "gwang2_Main.html";
+                frm.method = "post";
+                frm.submit();
+            }
+        }
+    </script>
+</head>
+<body onload="start()">
+<form name="frm">
+    <div id="tableset"></div>
+    <button type="submit" onclick="_form()">회원가입</button>
+</form>
+</body>
+</html>
