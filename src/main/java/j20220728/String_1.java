@@ -1,19 +1,20 @@
 package j20220728;
-
+/*
 public class String_1 {
     public static void main(String[] args) {
-        //¹®ÀÚ¿­ = ¹®ÀÚ + ¹®ÀÚ
-        // charÀº ¿¹¾à¾î. StringÀº Å¬·¡½º.
-        String str = new String("±èÀçÈÆ");
+        //ï¿½ï¿½ï¿½Ú¿ï¿½ = ï¿½ï¿½ï¿½ï¿½ + ï¿½ï¿½ï¿½ï¿½
+        // charï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½. Stringï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½.
+        String str = new String("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
         System.out.println(str);
 
         for(int i = 0; i < str.length(); i++){
-            if(str.charAt(i) == 'Àç')
+            if(str.charAt(i) == 'ï¿½ï¿½')
             System.out.println(str.charAt(i));
         }
 
-        Character character = '±è';
-        if(character.equals('±è'))System.out.println(true);
+        Character character = 'ï¿½ï¿½';
+        if(character.equals('ï¿½ï¿½'))System.out.println(true);
         else System.out.println(false);
     }
 }
+*/
