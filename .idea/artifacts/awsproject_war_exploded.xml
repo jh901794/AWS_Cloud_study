@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="awsproject:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/awsproject_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../../IDE/mysql-connector-java-8.0.25.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../IDE/ojdbc7-12.1.0.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../IDE/sqldeveloper-22.2.0.173.2018-x64.zip" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../IDE/apache-tomcat-9.0.65-windows-x64.zip" />
+          <element id="library" level="project" name="doc" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="awsproject/web/Web" />
+    </root>
+  </artifact>
+</component>

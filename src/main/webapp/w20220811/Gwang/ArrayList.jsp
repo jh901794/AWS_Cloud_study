@@ -5,12 +5,13 @@
     ArrayList arr = null;
 %>
 <%
-    arr = new ArrayList();
-    if(request.getParameter("_id") != null) {
-        arr.add(request.getParameter("_id"));
-    }
-    if(request.getParameter("_pwd") != null) {
-        arr.add(request.getParameter("_pwd"));
+    if(arr != null) {
+        if (request.getParameter("_id") != null) {
+            arr.add(request.getParameter("_id"));
+        }
+        if (request.getParameter("_pwd") != null) {
+            arr.add(request.getParameter("_pwd"));
+        }
     }
 
 %>
@@ -21,6 +22,7 @@
 <title>Insert title here</title>
   <script>
         function Login(){
+            out.print("<% arr = new ArrayList(); %>")
             var frm = document.gwangfrm;
             if(frm._id.value==""){
                 alert("아이디 입력");
@@ -57,7 +59,9 @@
 
 </form>
 <%
-    out.println("ID : " + arr.get(0) + "<br>" + "PWD : "+ arr.get(1));
+    if(arr != null) {
+        out.println("ID : " + arr.get(0) + "<br>" + "PWD : " + arr.get(1));
+    }
 %>
 </body>
 </html>

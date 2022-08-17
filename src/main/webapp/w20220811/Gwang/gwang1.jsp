@@ -19,14 +19,7 @@
     <script>
         function Login(){
             var frm = document.gwangfrm;
-            if(frm._id.value==""){
-                alert("아이디 입력");
-                return;
-            }
-            if(frm._pwd.value==""){
-                alert("password 입력");
-                return;
-            }
+            
             frm.action="gwang1.jsp";
             frm.submit;
         }
@@ -49,10 +42,14 @@
                 <button type="submit" style="width: 100%" value="로그인" onclick="Login()">로그인</button>
             </td>
         </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit" style="width: 100%" onclick="_list()">회원확인</button>
+            </td>
+        </tr>
     </table>
     <br>
-    userid : <%= userid%>
-    password : <%= userpwd%>
+
 </form>
 </body>
 </html>
