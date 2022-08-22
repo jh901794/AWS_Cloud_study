@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@page import="j20220817.bean.LoginBean,j20220817.dao.LoginDao" %>
+    <%@page import="Before.j20220817.bean.LoginBean,Before.j20220817.dao.LoginDao" %>
 <%
 
     request.setCharacterEncoding("utf-8");
