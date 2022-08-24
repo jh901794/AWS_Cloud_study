@@ -1,6 +1,6 @@
 package Before.j20220801;
 
-import Common.CommonHome;
+import Before.CommonHome;
 import java.util.Hashtable;
 
 public class Hash_2 extends CommonHome {

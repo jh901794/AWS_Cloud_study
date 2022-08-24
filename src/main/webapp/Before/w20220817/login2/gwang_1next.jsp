@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <%@ page import="Before.j20220817.bean.GwangBean" %>
-<%@ include file="../../../Common/Gwang_1.jsp"%>
+<%@ include file="../../Common/Gwang_1.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>

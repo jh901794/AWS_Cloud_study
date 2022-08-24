@@ -1,6 +1,6 @@
 package Before.j20220801.mega;
 
-import Common.CommonHome;
+import Before.CommonHome;
 
 public class Gwang_4 extends CommonHome {
     public Gwang_4(String name, String address, int age) {

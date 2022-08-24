@@ -1,6 +1,6 @@
 package Before.questionpool;
 
-import Common.CommonHome;
+import Before.CommonHome;
 
 import java.util.Enumeration;
 import java.util.Hashtable;

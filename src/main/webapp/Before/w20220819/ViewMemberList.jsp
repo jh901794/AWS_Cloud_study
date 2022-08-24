@@ -1,7 +1,7 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<%@ page import ="java.sql.*,j20220819.MysqlDao2" %>
+<%@ page import ="java.sql.*,Before.j20220819.MysqlDao2" %>
 <%
 <!DOCTYPE html>
 <html>

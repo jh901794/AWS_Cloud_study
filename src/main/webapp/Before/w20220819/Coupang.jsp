@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
-<%@  page import="j20220819.CoupangBean" %>
+<%@  page import="Before.j20220819.CoupangBean" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="j20220819.CoupangDao" %>
+<%@ page import="Before.j20220819.CoupangDao" %>
 
 <!doctype html>
 <html lang="en">

@@ -1,6 +1,6 @@
 package Before.questionpool;
 
-import Common.CommonHome;
+import Before.CommonHome;
 import Before.j20220802.awt.CommonAwtEvent2;
 
 import java.awt.*;

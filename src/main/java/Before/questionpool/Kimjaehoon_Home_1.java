@@ -1,6 +1,6 @@
 package Before.questionpool;
 
-import Common.CommonHome;
+import Before.CommonHome;
 
 import java.io.BufferedReader;
 import java.io.IOException;

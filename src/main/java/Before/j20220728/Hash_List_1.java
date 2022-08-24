@@ -1,6 +1,6 @@
 package Before.j20220728;
 
-import Common.CommonHome;
+import Before.CommonHome;
 
 public class Hash_List_1 extends CommonHome {
     public static void main(String[] args) {
