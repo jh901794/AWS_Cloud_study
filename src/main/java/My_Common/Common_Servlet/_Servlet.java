@@ -1,4 +1,6 @@
-package Common.Common_Servlet;
+package My_Common.Common_Servlet;
+
+import My_Common.CommonCmd.Command;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -6,8 +8,8 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 @WebServlet(name = "Servlet", value = "/Servlet")
-public class Base_Servlet extends HttpServlet {
-    public Base_Servlet() {
+public abstract class _Servlet extends HttpServlet implements Command {
+    public _Servlet() {
     }
 
     @Override
@@ -21,15 +23,20 @@ public class Base_Servlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doService(request,response);
 
     }
 
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        doService(request,response);
     }
 
     protected void doExecute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+    }
+    protected void doService(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
     }
 }

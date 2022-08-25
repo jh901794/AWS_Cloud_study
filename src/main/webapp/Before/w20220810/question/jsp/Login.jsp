@@ -6,6 +6,6 @@
 	if(_id.equals("jaehoon") && _pwd.equals("1234")){
 		response.sendRedirect("success.html");
 	}else{
-		response.sendRedirect("common.html");
+		response.sendRedirect("console.common.html");
 	}
 %>

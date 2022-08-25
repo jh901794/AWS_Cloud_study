@@ -5,7 +5,7 @@ import java.util.Properties;
 
 public class Properties_2 {
     public static void main(String[] args) {
-        String path = "/project/share/questionfile/common.properties";
+        String path = "/project/share/questionfile/console.common.properties";
         // \project\share\questionfile
         Properties p = new Properties();
 

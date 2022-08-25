@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="Common.util.CommonUtil" %>
+    <%@ page import="My_Common.util.CommonUtil" %>
     <%
     // 모든 요청은 request. name, session, cookie를 가진다.
     String userid = CommonUtil.IsNull(request, "userid");

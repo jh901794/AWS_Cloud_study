@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="Common.util.CommonUtil, java.util.ArrayList" %>
+    <%@ page import="My_Common.util.CommonUtil, java.util.ArrayList" %>
     <%!
 /*     String guserid, gsubject, currentdate;
     int gnumber, gview, glike; 

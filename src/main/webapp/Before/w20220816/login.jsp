@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="Common.util.CommonUtil" %>
+    <%@ page import="My_Common.util.CommonUtil" %>
 <!DOCTYPE html>
 <html>
 <head>
