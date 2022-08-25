@@ -1,7 +1,7 @@
-package console.common.servlet;
+package j20220825.servlet;
 
-import console.common.cmd.Diablo3BoardCmd;
-import console.common.util.CommonUtil;
+import j20220825.cmd.DiabloLoginCmd;
+import j20220825.util.CommonUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +14,7 @@ import java.util.Map;
  */
 
 //life cycle : servlet : init(한번만 실행)-> doget dopost destory
-public class Diablo3Controller extends BaseServlet {
+public class DiabloLoginController extends BaseServlet {
 
 
     @Override
@@ -22,10 +22,14 @@ public class Diablo3Controller extends BaseServlet {
         String nextPage = null;
         try {
             Map map = CommonUtil.CommonPNames(request);
-            Diablo3BoardCmd cmd = new Diablo3BoardCmd();
+            DiabloLoginCmd cmd = new DiabloLoginCmd();
             cmd.doExecute(map, request, response);
-			doForward(request, response, cmd.getNextPage());
+
+            doForward(request, response, cmd.getNextPage());
+
         } catch (Exception ex) {
+        }finally {
+
         }
 
     }

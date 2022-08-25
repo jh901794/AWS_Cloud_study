@@ -9,12 +9,10 @@
 <html>
 <head>
     <title>Title</title>
-    <script src="../CommonJS/Common_JS.js">
 
-    </script>
 </head>
 <body>
-<form>
+<form action="/diablo3.do">
     <%@include file="../CommonJSP/Login_Form.jsp"%>
 </form>
 </body>

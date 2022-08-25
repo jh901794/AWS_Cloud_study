@@ -1,47 +1,33 @@
-package console.common.cmd;
+package j20220825.cmd;
 
-import console.common.dao.Diablo3Dao;
+import j20220825.dao.BoardDao;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Map;
 
-public class Diablo3BoardCmd extends BaseCommand{
+public class Diablo3BoardCmd extends BaseCommand {
 
 
 	public Diablo3BoardCmd() {
 		//모든 페이지 관리
-		setNextPage("/w20220825/Login.jsp");
+		setNextPage("/w20220825/diabloindex.jsp");
 	}
 
 
 	@Override
 	public void doExecute(Map reqTray, HttpServletRequest request, HttpServletResponse response) {
-		Diablo3Dao dao = new Diablo3Dao();
+		BoardDao dao = new BoardDao();
 		List list = null;
 
 		try {
-			list = dao.Diablo3BoardList(getmysqlConnection(), reqTray);
-			for(int i=0; i< list.size(); i++){
+			list = dao.DiabloBoardList(getmysqlConnection(), reqTray);
 
-			}
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (Exception ex) {
+			throw new RuntimeException(ex);
 		}finally {
 			request.setAttribute("list1", list);
 		}
-
 	}
-
-
-
-
-
-
-
-
-
-
 }

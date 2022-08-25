@@ -1,4 +1,4 @@
-package console.common.servlet;
+package j20220825.servlet;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

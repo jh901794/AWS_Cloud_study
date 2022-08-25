@@ -1,7 +1,6 @@
 package console.common.dao;
 
 import console.common.bean.Diablo3Bean;
-import console.common.util.CommonUtil;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -32,18 +31,6 @@ public class Diablo3Dao {
         query.append(",boardlike         \n");
         query.append("FROM DIABLO3BOARD         \n");
 
-
-
-        if(!(key.get("userid")==null || key.get("userid").equals(""))) {
-
-            query.append("WHERE       ");
-            query.append("userid =" + CommonUtil.Qutter(key.get("userid").toString(), 2));
-
-        }
-
-//         if(!(key.get("passwd")==null || key.get("passwd").equals(""))) {
-//            query.append("AND passwd =" + CommonUtil3.Qutter(key.get("passwd").toString(), 2) +      " \n");
-//         }
 
         ResultSet rs = stat.executeQuery(query.toString());
         int init = 0;

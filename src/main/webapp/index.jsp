@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/diablo3.do"><input type="submit"></form>
+<form action="/diablologin.do"><input type="submit"></form>
 </body>
 </html>

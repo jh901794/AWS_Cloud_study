@@ -1,6 +1,6 @@
-package console.common.bean;
+package j20220825.bean;
 
-public class Diablo3Bean extends BaseBean{
+public class Diablo_Board_Bean extends BaseBean {
 
 
     public String boardsubject;
@@ -27,12 +27,12 @@ public class Diablo3Bean extends BaseBean{
     }
 
     //기본생성자
-    public Diablo3Bean() {
+    public Diablo_Board_Bean() {
         // TODO Auto-generated constructor stub
     }
 
 
-    public Diablo3Bean(String numindex, String userid, String birthday, String email, String jumin1, String jumin2, String phone, String address) {
+    public Diablo_Board_Bean(String numindex, String userid, String birthday, String email, String jumin1, String jumin2, String phone, String address) {
 
         this.numindex = numindex;
         this.userid= userid;
@@ -44,12 +44,13 @@ public class Diablo3Bean extends BaseBean{
         this.address = address;
     }
 
-    public Diablo3Bean(String numindex, String userid, String boardsubject, String boardcurrentdate, String  boardcount, String  boardlike) {
+    public Diablo_Board_Bean(String numindex, String userid, String boardsubject, String boardcurrentdate, String email, String  boardcount, String  boardlike) {
 
         this.numindex = numindex;
         this.userid= userid;
         this.boardsubject= boardsubject;
         this.boardcurrentdate = boardcurrentdate;
+        this.email = email;
         this.boardcount = boardcount;
         this.boardlike = boardlike;
 

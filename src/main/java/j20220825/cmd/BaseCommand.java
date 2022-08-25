@@ -1,4 +1,4 @@
-package console.common.cmd;
+package j20220825.cmd;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.Map;
 
-public abstract class BaseCommand implements Command{
+public abstract class BaseCommand implements Command {
 
 	private Connection connection = null;
 	private String nextPage = null;
